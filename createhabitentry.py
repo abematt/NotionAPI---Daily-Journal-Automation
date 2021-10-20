@@ -50,4 +50,4 @@ def createHabitTrackerEntry(headers,pageURL,habitID,journal_id_created,habit_tra
 
   data = json.dumps(newEntryData)
   response = requests.request("POST",pageURL,headers=headers,data=data)
-  print(response.status_code)
+  return response

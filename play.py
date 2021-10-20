@@ -19,4 +19,4 @@ headers = {
 # readDatabase(databaseURL,journalID,headers)
 journal_response = createJournalEntry(headers,pageURL,journalID,monthID,weekID,day_counter,journal_title)
 journal_id_created = getIdFromJson(journal_response)
-createHabitTrackerEntry(headers,pageURL,habitID,journal_id_created,habit_tracker_title)
+habit_response = createHabitTrackerEntry(headers,pageURL,habitID,journal_id_created,habit_tracker_title)

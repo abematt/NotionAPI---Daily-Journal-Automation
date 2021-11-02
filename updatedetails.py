@@ -21,9 +21,9 @@ def updateDateCounterDetails():
 
 def createDateTitle():
     today = datetime.today()
-    day = str(today.day)
+    day = f"{today.day:02d}"
     year = str(today.year)
-    month = str(today.month)
+    month = f"{today.month:02d}"
     month_name = calendar.month_name[today.month]
     journal_title = month_name[:3] + '-' + day + '-' + year
     habit_title = year + "-" + month + "-" + day
